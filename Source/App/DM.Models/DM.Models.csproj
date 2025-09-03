@@ -153,6 +153,10 @@
     <Compile Include="Migrations\202309011822536_PatientMedicalInfo_Entity_Updated.designer.cs">
       <DependentUpon>202309011822536_PatientMedicalInfo_Entity_Updated.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202509030639057_Patient_Code_Unique.cs" />
+    <Compile Include="Migrations\202509030639057_Patient_Code_Unique.Designer.cs">
+      <DependentUpon>202509030639057_Patient_Code_Unique.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Patient.cs" />
     <Compile Include="PatientMedicalInfo.cs" />
@@ -240,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202309011822536_PatientMedicalInfo_Entity_Updated.resx">
       <DependentUpon>202309011822536_PatientMedicalInfo_Entity_Updated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202509030639057_Patient_Code_Unique.resx">
+      <DependentUpon>202509030639057_Patient_Code_Unique.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

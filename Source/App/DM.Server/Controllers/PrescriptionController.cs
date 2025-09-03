@@ -38,7 +38,7 @@ namespace DM.AuthServer.Controllers
         [Route("GetPatientCurrentPrescription")]
         public IHttpActionResult GetPatientCurrentPrescription(string request)
         {
-            Prescription prescription = _prescriptionService.GetPatientCurrentPrescription(Guid.Parse(request)).Last(x=> x.StatusId == 5);
+            Prescription prescription = _prescriptionService.GetPatientCurrentPrescription(Guid.Parse(request)).LastOrDefault(x=> x.StatusId == 5);
             return Ok(prescription);
         }        
 

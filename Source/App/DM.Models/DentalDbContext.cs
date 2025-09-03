@@ -39,6 +39,9 @@ namespace DM.Models
             base.OnModelCreating(modelBuilder);
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
+
+            modelBuilder.Entity<Patient>().HasIndex(p => p.Code).IsUnique();
+
         }
 
     }
